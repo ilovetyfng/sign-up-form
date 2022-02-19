@@ -25,7 +25,7 @@ body {
     opacity: 50%;
     width: var(--picture-width);
     height: var(--logo-height);
-    bottom: 32rem;
+    bottom: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,4 +46,11 @@ body {
     height: var(--logo-height);
     width: 7rem;
     object-fit: cover;
+}
+
+.img-credit {
+    position: absolute;
+    bottom: 3rem;
+    left: 9rem;
+    filter: invert(1);
 }
