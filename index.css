@@ -1,0 +1,49 @@
+:root {
+    --picture-width: 32rem;
+    --logo-height: 12rem;
+    --logo-text-height: 4rem;
+}
+
+body {
+    display: flex;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: Balivia;
+    src: url(Balivia.ttf);
+}
+.background {
+    height: 125%;
+    width: var(--picture-width);
+    object-fit: cover;
+}
+
+.logo-container {
+    position: absolute;
+    background: black;
+    opacity: 50%;
+    width: var(--picture-width);
+    height: var(--logo-height);
+    bottom: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    font-family: sans-serif;
+    font-size: var(--logo-text-height);
+    text-align: center;
+    padding: 0px;
+    flex: 0 1 0%;
+    font-family: Balivia;
+}
+
+.logo {
+    filter: invert(1);
+    height: var(--logo-height);
+    width: 7rem;
+    object-fit: cover;
+}
