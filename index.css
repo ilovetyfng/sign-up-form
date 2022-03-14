@@ -7,6 +7,12 @@
 body {
     display: flex;
     margin: 0px;
+    justify-content: center;
+    background-color: black;
+}
+
+body > * {
+    background-color:white;
 }
 
 @font-face {
@@ -51,6 +57,68 @@ body {
 .img-credit {
     position: absolute;
     bottom: 3rem;
-    left: 9rem;
+    left: 22rem;
     filter: invert(1);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 64rem;
+    height: 64rem;
+}
+
+.call-texts{
+    padding: 8rem 4rem 4rem;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    box-shadow: 0px 1rem 2rem -2rem rgba(0,0,0,0.5);
+    padding: 0 16rem 2rem 0;
+}
+
+.input {
+    margin: 1rem 4rem;
+}
+
+
+.input input {
+    border:hidden;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    height: 1.5rem;
+    padding: 0.125rem 0.25rem;
+    outline: black solid 0.1rem;
+}
+
+.input input:focus{
+    outline: aqua solid 0.1rem;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+    border: hidden;
+}
+
+button {
+    font-size: 1rem;
+    border-style: hidden;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 92, 92);
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 0.5rem;
+    margin: 2rem 4rem; 
+    color: white;
+    font-weight: bold;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0,0,0,0.5);
 }
